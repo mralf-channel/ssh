@@ -140,7 +140,7 @@ def Menu():
    \x1b[1;93m ╔═╗╦═╗╔═╗╔═╗╔╦╗╔═╗  ╔═╗╔═╗╦ ╦
     ║  ╠╦╝║╣ ╠═╣ ║ ║╣   ╚═╗╚═╗╠═╣
     ╚═╝╩╚═╚═╝╩ ╩ ╩ ╚═╝  ╚═╝╚═╝╩ ╩
-\x1b[1;97m     "MRALF CHANNEL"
+\x1b'\033[32;1m',  "MRALF CHANNEL"
 \x1b[1;91m+-----------------------------------+
 \x1b[1;96m  {\x1b[1;92m01\x1b[1;96m} \x1b[1;97mCREATE SSL/TLS MONTHLY
 \x1b[1;96m  {\x1b[1;92m02\x1b[1;96m} \x1b[1;97mCREATE SSH MONTHLY
