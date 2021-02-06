@@ -78,12 +78,12 @@ class SSL_TLS:
  
 		self.pilih = input("\x1b[1;91m+-----------------------------------+\n  \x1b[1;97m>>> ")
 		while self.pilih == "":
-			print(" \x1b[1;91m >>>\x1b[1;97m YANG BENER NGENTOD\x1b[1;91m!")
+			print(" \x1b[1;91m >>>\x1b[1;97m KETIK ANGKANYA LURR \x1b[1;91m!")
 			self.pilih = input("  \x1b[1;97m>>> ")
 		try:
 			chekin = self.link[int(self.pilih) - 1]
 		except (ValueError, IndexError):
-			exit("  \x1b[1;97m[\x1b[1;91m!\x1b[1;97m] MASUKAN ANGKANYA AJA BRO..")
+			exit("  \x1b[1;97m[\x1b[1;91m!\x1b[1;97m] MASUKAN ANGKANYA AJA LURR..")
 		cek_2 = par(get(chekin).text, "html.parser")
 		if cek_2.find("div", class_="progress-bar progress-bar-danger") is None:
 			serverid = cek_2.find('input', {"type":"hidden"}).get("value")
