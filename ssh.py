@@ -126,8 +126,8 @@ class SSH:
 			serverid = cek_2.find('input', {"type":"hidden"}).get("value")
 			cookie = re.search("PHPSESSID=(\w+)\sfor", str(get(chekin).cookies)).group(1)
 			print("\x1b[1;91m+-----------------------------------+")
-			user = input("  \x1b[1;91m==> \x1b[1;97mSET USERNAME:\x1b[1;96m ")
-			pasw = input("  \x1b[1;91m==> \x1b[1;97mSET PASSWORD: \x1b[1;96m")
+			user = input("  \x1b[1;91m==> \x1b[1;97mISI NAMA ENTE LURR:\x1b[1;96m ")
+			pasw = input("  \x1b[1;91m==> \x1b[1;97mISI PASSWORD LURR: \x1b[1;96m")
 			print("\x1b[1;91m+-----------------------------------+")
 			Membuat_ssh(serverid, cookie, user, pasw, chekin)
 		if cek_2.find("div", class_="progress-bar progress-bar-danger") is not None:
@@ -148,14 +148,14 @@ def Menu():
 \x1b[1;91m+-----------------------------------+""")
 	pilih = input("  \x1b[1;97m>>> \x1b[1;92m")
 	while pilih == "":
-		print(" \x1b[1;91m >>>\x1b[1;97m YANG BENER NGENTOD\x1b[1;91m!")
+		print(" \x1b[1;91m >>>\x1b[1;97m YANG BENER LURR\x1b[1;91m!")
 		pilih = input("  \x1b[1;97m>>> \x1b[1;92m")
 	if pilih in ("1","01"):
 		nice = SSL_TLS
 	elif pilih in ("2","02"):
 		nice = SSH
 	elif pilih in ("0","00"):
-		exit("\x1b[1;91m+-----------------------------------+\n \x1b[1;97mTERIMAKASIH SUDAH MEMAKAI TOOLS SAYA\n")
+		exit("\x1b[1;91m+-----------------------------------+\n \x1b[1;97mTERIMAKASIH SUDAH MEMAKAI TOOLS MRALF CHANNEL\n")
 	else:
 		exit(" \x1b[1;91m >>> \x1b[1;97mMAAF MENU \x1b[1;91m'\x1b[1;97m"+pilih+"\x1b[1;91m'\x1b[1;97m TIDAK DITEMUKAN\n")
 	print("\x1b[1;91m+-----------------------------------+")
